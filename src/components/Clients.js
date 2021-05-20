@@ -4,7 +4,7 @@ import { clients } from '../data/clients.data';
 
 const Clients = () => {
     return (
-        <section className="my-3">
+        <section className="my-4">
             <Container>
                 <Row className="justify-content-center align-items-center">
                     {clients.map(({ id, image, title }) => (

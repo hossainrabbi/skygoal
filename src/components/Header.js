@@ -4,7 +4,7 @@ import Hero from '../images/Hero.png';
 
 const Header = () => {
     return (
-        <header className="mb-3">
+        <header className="mb-4">
             <Container>
                 <Row className="align-items-center">
                     <Col md={6}>

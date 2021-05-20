@@ -6,6 +6,12 @@
     --primary-color: #003084;
     --primary-color-light: #5a60ea;
     --secondary-color: #ff7101;
+    --light-color: #ffffff;
+    --shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    --shadow-light: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    --transition: 0.5s;
+    --radius-max: 15px;
+    --radius-min: 10px;
 }
 
 body {
