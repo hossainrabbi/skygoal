@@ -1,16 +1,25 @@
 import React from 'react';
-import { Container, Nav, Navbar } from 'react-bootstrap';
+import { Button, Container, Nav, Navbar } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
+import { navbar } from '../data/navbar.data';
+import logo from '../images/FastTruck.png';
 
 const NavBar = () => {
     return (
-        <Navbar expand="lg">
+        <Navbar expand="lg" className="nav-bar">
             <Container>
-                <Navbar.Brand href="#home">Logo</Navbar.Brand>
+                <Link to="/" className="navbar-brand">
+                    <img src={logo} alt="FastTruck" />
+                </Link>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="ml-auto">
-                        <Nav.Link href="#home">Home</Nav.Link>
-                        <Nav.Link href="#link">Link</Nav.Link>
+                        {navbar.map(({ id, title, url }) => (
+                            <Link className="nav-link" to={url} key={id}>
+                                {title}
+                            </Link>
+                        ))}
+                        <Button className="custom-btn">Sign In</Button>
                     </Nav>
                 </Navbar.Collapse>
             </Container>
