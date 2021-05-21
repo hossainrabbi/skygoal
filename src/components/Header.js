@@ -20,9 +20,15 @@ const Header = () => {
                                 necessitatibus repellendus quos reiciendis
                                 cumque ex repudiandae.
                             </p>
-                            <Button className="custom-btn">
-                                Book a Devivery
-                            </Button>
+                            <div>
+                                <Button className="custom-btn mb-4">
+                                    Book a Devivery
+                                </Button>
+                            </div>
+                            <div className="custom-group-btn">
+                                <Button className="parcel-btn">Parcel</Button>
+                                <Button className="food-btn">Food</Button>
+                            </div>
                         </Fade>
                     </Col>
                     <Col md={6} className="mb-4 mb-md-0">

@@ -7,7 +7,7 @@ import FooterItem from './FooterItem';
 
 const Footer = () => {
     return (
-        <footer className="footer pt-5">
+        <footer className="footer pt-4">
             <Container>
                 <Row>
                     <Col lg={3} sm={6} className="mb-3">

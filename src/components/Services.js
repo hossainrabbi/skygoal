@@ -5,7 +5,7 @@ import Service from './Service';
 
 const Services = () => {
     return (
-        <section className="services mb-5">
+        <section className="services mb-4">
             <Container>
                 <Row>
                     {services.map((service) => (

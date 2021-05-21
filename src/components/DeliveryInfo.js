@@ -6,9 +6,9 @@ import deliveryReceive from '../images/deliveryReceive.png';
 
 const DeliveryInfo = () => {
     return (
-        <section className="mb-5">
+        <section className="mb-4">
             <Container>
-                <Row className="align-items-center mb-md-5">
+                <Row className="align-items-center mb-md-4">
                     <Col md={6} className="mb-5 mb-md-0">
                         <Fade left>
                             <img src={discover} alt="Discover" />
@@ -19,7 +19,7 @@ const DeliveryInfo = () => {
                             <h2>
                                 Find Favorites and Discover New OnesFrom our App
                             </h2>
-                            <p>
+                            <p className="mb-0">
                                 Lorem ipsum dolor sit amet, consectetur
                                 adipisicing elit. Eligendi, nesciunt eius
                                 necessitatibus repellendus quos reiciendis
@@ -35,7 +35,7 @@ const DeliveryInfo = () => {
                                 When you order your food, it will arrive at your
                                 door in time.
                             </h2>
-                            <p>
+                            <p className="mb-0">
                                 Lorem ipsum dolor sit amet, consectetur
                                 adipisicing elit. Eligendi, nesciunt eius
                                 necessitatibus repellendus quos reiciendis

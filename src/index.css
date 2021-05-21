@@ -6,6 +6,7 @@
     --primary-color-light: #5a60ea;
     --secondary-color: #ff7101;
     --light-color: #ffffff;
+    --gray-color: #c1c1c1;
     --shadow: rgba(0, 0, 0, 0.13) 1.95px 1.95px 2.6px;
     --shadow-light: rgba(10, 10, 10, 0.144) 0px 8px 24px;
     --shadow-light-dark: rgba(0, 0, 0, 0.158) 3px 3px 20px;
@@ -50,6 +51,16 @@ h2 span {
     color: var(--secondary-color);
 }
 
+.btn {
+    color: var(--light-color) !important;
+    border: none !important;
+    border-radius: 30px !important;
+    padding: 10px 30px !important;
+    font-weight: 700 !important;
+    transition: var(--transition) !important;
+    background-size: 200% auto;
+}
+
 /* Common Class Styles */
 .custom-btn {
     background-image: linear-gradient(
@@ -58,13 +69,6 @@ h2 span {
         var(--primary-color) 51%,
         var(--primary-color-light) 100%
     );
-    color: var(--light-color) !important;
-    border: none;
-    border-radius: 30px;
-    padding: 9px 24px;
-    font-weight: 700;
-    transition: 0.5s;
-    background-size: 200% auto;
     box-shadow: var(--shadow-light);
 }
 
@@ -80,6 +84,25 @@ h2 span {
 
 .custom-btn:focus {
     box-shadow: none;
+}
+
+.custom-group-btn {
+    background-color: var(--gray-color);
+    display: inline-block;
+    border-radius: 30px;
+}
+
+.custom-group-btn .btn {
+    box-shadow: none !important;
+}
+
+.custom-group-btn .parcel-btn {
+    background-color: var(--secondary-color) !important;
+}
+
+.custom-group-btn .food-btn {
+    background-color: transparent !important;
+    padding-left: 15px !important;
 }
 
 /* Navbae Component */
@@ -193,6 +216,9 @@ h2 span {
 }
 
 @media (max-width: 768px) {
+    h2 {
+        font-size: 2rem;
+    }
     .services {
         margin-bottom: 0 !important;
     }
