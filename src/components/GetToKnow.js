@@ -5,12 +5,12 @@ import CountUpContent from './CountUpContent';
 
 const GetToKnow = () => {
     return (
-        <section className="my-5">
+        <section className="mb-5">
             <Container>
                 <h2 className="text-center mb-5">Get to know US</h2>
                 <Row className="justify-content-center">
                     {getToKnow.map((data) => (
-                        <Col md={3} key={data.id}>
+                        <Col lg={3} md={4} key={data.id}>
                             <CountUpContent {...data} />
                         </Col>
                     ))}

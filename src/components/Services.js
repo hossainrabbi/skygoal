@@ -5,11 +5,11 @@ import Service from './Service';
 
 const Services = () => {
     return (
-        <section className="my-5">
+        <section className="services mb-5">
             <Container>
                 <Row>
                     {services.map((service) => (
-                        <Col md={3} key={service.id}>
+                        <Col lg={3} md={6} className="my-3" key={service.id}>
                             <Service {...service} />
                         </Col>
                     ))}

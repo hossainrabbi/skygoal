@@ -5,10 +5,10 @@ import deliveryReceive from '../images/deliveryReceive.png';
 
 const DeliveryInfo = () => {
     return (
-        <section className="my-5">
+        <section className="mb-5">
             <Container>
-                <Row className="align-items-center">
-                    <Col md={6}>
+                <Row className="align-items-center mb-md-5">
+                    <Col md={6} className="mb-5 mb-md-0">
                         <img src={discover} alt="Discover" />
                     </Col>
                     <Col md={6}>
@@ -22,7 +22,7 @@ const DeliveryInfo = () => {
                         </p>
                     </Col>
                 </Row>
-                <Row className="align-items-center">
+                <Row className="align-items-center flex-column-reverse flex-md-row">
                     <Col md={6}>
                         <h2>
                             When you order your food, it will arrive at your

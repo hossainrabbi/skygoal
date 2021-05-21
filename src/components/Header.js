@@ -6,7 +6,7 @@ const Header = () => {
     return (
         <header className="mb-5">
             <Container>
-                <Row className="align-items-center">
+                <Row className="align-items-center flex-column-reverse flex-md-row">
                     <Col md={6}>
                         <h2>
                             Local <span>Urgent</span> Courier Devivery Services
@@ -18,7 +18,7 @@ const Header = () => {
                         </p>
                         <Button className="custom-btn">Book a Devivery</Button>
                     </Col>
-                    <Col md={6}>
+                    <Col md={6} className="mb-4 mb-md-0">
                         <img src={Hero} alt="Hero" />
                     </Col>
                 </Row>

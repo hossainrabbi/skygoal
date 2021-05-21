@@ -7,12 +7,12 @@ import FooterItem from './FooterItem';
 
 const Footer = () => {
     return (
-        <footer className="footer py-5">
+        <footer className="footer pt-5">
             <Container>
                 <Row>
-                    <Col md={3}>
-                        <div className="footer-logo">
-                            <Link to="/">
+                    <Col lg={3} className="col-6 mb-3">
+                        <div>
+                            <Link to="/" className="footer-logo">
                                 <img src={logo} alt="FastTruck" />
                             </Link>
                             <p className="mt-3 mb-0">
@@ -22,7 +22,7 @@ const Footer = () => {
                         </div>
                     </Col>
                     {footer.map((data) => (
-                        <Col md={3} key={data.id}>
+                        <Col lg={3} className="col-6 mb-3" key={data.id}>
                             <FooterItem {...data} />
                         </Col>
                     ))}

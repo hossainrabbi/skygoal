@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap');
 
-/* Common Tag Styles */
 :root {
     --background-color: #f1f0fd;
     --primary-color: #003084;
@@ -15,6 +14,7 @@
     --radius-min: 10px;
 }
 
+/* Common Tag Styles */
 body {
     font-family: 'Nunito', sans-serif;
     font-size: 16px;
@@ -64,10 +64,10 @@ h2 span {
 .custom-btn:hover {
     background-position: bottom center;
     text-decoration: none;
+    box-shadow: var(--shadow);
 }
 
 .custom-btn:active {
-    box-shadow: var(--shadow);
     transform: translateY(4px);
 }
 
@@ -75,7 +75,7 @@ h2 span {
     box-shadow: none;
 }
 
-/* Navbae */
+/* Navbae Component */
 .nav-bar .nav-link {
     color: var(--primary-color) !important;
     margin-left: 15px;
@@ -91,7 +91,7 @@ h2 span {
     margin-left: 25px;
 }
 
-/* clients */
+/* Clients Component */
 .clients img {
     transition: all var(--transition);
 }
@@ -100,14 +100,14 @@ h2 span {
     transform: translate3d(0, -10px, 0);
 }
 
-/* Service Components */
+/* Service Component */
 .service {
     background-color: var(--light-color);
     padding: 30px 20px;
     border-radius: var(--radius-max);
     box-shadow: var(--shadow);
     transition: all var(--transition);
-    position: relative;
+    height: 230px;
 }
 
 .service:hover {
@@ -139,7 +139,7 @@ h2 span {
     background-color: var(--light-color);
 }
 
-/* get-to-know */
+/* Get To Know Component */
 .get-to-know {
     background-color: var(--light-color);
     padding: 15px 10px;
@@ -159,12 +159,13 @@ h2 span {
     color: var(--secondary-color);
 }
 
-/* footer-logo */
+/* Footer Component */
 .footer .footer-logo {
     height: 60px;
+    display: inline-block;
 }
 
-/* footer-item */
+/* Footer Item Component */
 .footer-item h5 {
     font-weight: 700;
     font-size: 1.5rem;
@@ -175,4 +176,17 @@ h2 span {
     color: var(--primary-color);
     margin-bottom: 10px;
     display: inline-block;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+    .nav-bar .custom-btn {
+        margin-left: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .services {
+        margin-bottom: 0 !important;
+    }
 }
