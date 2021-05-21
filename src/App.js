@@ -6,6 +6,7 @@ import NavBar from './components/NavBar';
 import Services from './components/Services';
 import DeliveryInfo from './components/DeliveryInfo';
 import GetToKnow from './components/GetToKnow';
+import Footer from './components/Footer';
 
 function App() {
     return (
@@ -16,6 +17,7 @@ function App() {
             <Services />
             <DeliveryInfo />
             <GetToKnow />
+            <Footer />
         </Router>
     );
 }
