@@ -9,6 +9,7 @@
     --light-color: #ffffff;
     --shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
     --shadow-light: rgba(10, 10, 10, 0.144) 0px 8px 24px;
+    --shadow-light-dark: rgba(0, 0, 0, 0.24) 0px 3px 20px;
     --transition: 0.5s;
     --radius-max: 15px;
     --radius-min: 10px;
@@ -150,4 +151,24 @@ h2 span {
     border-radius: var(--radius-min);
     box-shadow: var(--shadow-light);
     background-color: var(--light-color);
+}
+
+/* get-to-know */
+.get-to-know {
+    background-color: var(--light-color);
+    padding: 15px 10px;
+    border-radius: var(--radius-max);
+    height: 150px;
+    box-shadow: var(--shadow);
+    transition: all var(--transition);
+}
+
+.get-to-know:hover {
+    box-shadow: var(--shadow-light-dark);
+}
+
+.get-to-know .count {
+    font-size: 2.3rem;
+    font-weight: 700;
+    color: var(--secondary-color);
 }
