@@ -8,7 +8,7 @@
     --secondary-color: #ff7101;
     --light-color: #ffffff;
     --shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-    --shadow-light: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    --shadow-light: rgba(10, 10, 10, 0.144) 0px 8px 24px;
     --transition: 0.5s;
     --radius-max: 15px;
     --radius-min: 10px;
@@ -37,7 +37,7 @@ h2 span {
 }
 
 /* Common Class Styles */
-.custom-btn {
+/* .custom-btn {
     background: linear-gradient(
         to bottom,
         var(--primary-color-light),
@@ -47,12 +47,46 @@ h2 span {
     border-radius: 30px;
     padding: 9px 24px;
     font-weight: 700;
+    position: relative;
 }
 
 .custom-btn:focus,
 .custom-btn:active {
     box-shadow: none !important;
+} */
+
+/*  */
+.custom-btn {
+    background-image: linear-gradient(
+        to bottom left,
+        var(--primary-color-light) 0%,
+        var(--primary-color) 51%,
+        var(--primary-color-light) 100%
+    );
+    border: none;
+    border-radius: 30px;
+    padding: 9px 24px;
+    font-weight: 700;
+    transition: 0.5s;
+    background-size: 200% auto;
+    box-shadow: var(--shadow-light);
 }
+
+.custom-btn:hover {
+    background-position: bottom center;
+    text-decoration: none;
+}
+
+.custom-btn:active {
+    box-shadow: var(--shadow);
+    transform: translateY(4px);
+}
+
+.custom-btn:focus {
+    box-shadow: none;
+}
+
+/*  */
 
 /* Navbae */
 .nav-bar .navbar-brand {
@@ -70,6 +104,15 @@ h2 span {
     margin-left: 25px;
 }
 
+/* clients */
+.clients img {
+    transition: all var(--transition);
+}
+
+.clients img:hover {
+    transform: translate3d(0, -10px, 0);
+}
+
 /* Service Components */
 .service {
     background-color: var(--light-color);
@@ -77,6 +120,7 @@ h2 span {
     border-radius: var(--radius-max);
     box-shadow: var(--shadow);
     transition: all var(--transition);
+    position: relative;
 }
 
 .service:hover {

@@ -5,7 +5,7 @@ import deliveryReceive from '../images/deliveryReceive.png';
 
 const DeliveryInfo = () => {
     return (
-        <section className="my-4">
+        <section className="my-5">
             <Container>
                 <Row className="align-items-center">
                     <Col md={6}>

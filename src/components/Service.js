@@ -2,7 +2,7 @@ import React from 'react';
 
 const Service = ({ icon, title, info }) => {
     return (
-        <article className="service text-center my-4">
+        <article className="service text-center">
             <div className="service-icon">
                 <img src={icon} alt={title} />
             </div>

@@ -3,7 +3,7 @@ import { Container, Row } from 'react-bootstrap';
 
 const GetToKnow = () => {
     return (
-        <section className="my-4">
+        <section className="my-5">
             <Container>
                 <h2>Get to know US</h2>
                 <Row></Row>
