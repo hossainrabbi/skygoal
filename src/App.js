@@ -1,23 +1,15 @@
 import React from 'react';
-import { BrowserRouter as Router } from 'react-router-dom';
-import Clients from './components/Clients';
-import Header from './components/Header';
-import NavBar from './components/NavBar';
-import Services from './components/Services';
-import DeliveryInfo from './components/DeliveryInfo';
-import GetToKnow from './components/GetToKnow';
-import Footer from './components/Footer';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import Home from './pages/Home';
+import NotFound from './pages/NotFound';
 
 function App() {
     return (
         <Router>
-            <NavBar />
-            <Header />
-            <Clients />
-            <Services />
-            <DeliveryInfo />
-            <GetToKnow />
-            <Footer />
+            <Switch>
+                <Route exact path="/" component={Home} />
+                <Route path="*" component={NotFound} />
+            </Switch>
         </Router>
     );
 }

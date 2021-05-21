@@ -58,6 +58,7 @@ h2 span {
         var(--primary-color) 51%,
         var(--primary-color-light) 100%
     );
+    color: var(--light-color) !important;
     border: none;
     border-radius: 30px;
     padding: 9px 24px;
