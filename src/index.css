@@ -51,6 +51,7 @@ h2 span {
     color: var(--secondary-color);
 }
 
+/* Common Class Styles */
 .btn {
     color: var(--light-color) !important;
     border: none !important;
@@ -61,7 +62,6 @@ h2 span {
     background-size: 200% auto;
 }
 
-/* Common Class Styles */
 .custom-btn {
     background-image: linear-gradient(
         to bottom left,
@@ -105,7 +105,7 @@ h2 span {
     padding-left: 15px !important;
 }
 
-/* Navbae Component */
+/* Navbar Component */
 .nav-bar .nav-link {
     color: var(--primary-color) !important;
     margin-left: 15px;
