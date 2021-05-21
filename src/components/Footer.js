@@ -10,7 +10,7 @@ const Footer = () => {
         <footer className="footer pt-5">
             <Container>
                 <Row>
-                    <Col lg={3} className="col-6 mb-3">
+                    <Col lg={3} sm={6} className="mb-3">
                         <div>
                             <Link to="/" className="footer-logo">
                                 <img src={logo} alt="FastTruck" />
@@ -22,7 +22,7 @@ const Footer = () => {
                         </div>
                     </Col>
                     {footer.map((data) => (
-                        <Col lg={3} className="col-6 mb-3" key={data.id}>
+                        <Col lg={3} sm={6} className="mb-3" key={data.id}>
                             <FooterItem {...data} />
                         </Col>
                     ))}

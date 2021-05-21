@@ -6,15 +6,21 @@
     --primary-color-light: #5a60ea;
     --secondary-color: #ff7101;
     --light-color: #ffffff;
-    --shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    --shadow: rgba(0, 0, 0, 0.13) 1.95px 1.95px 2.6px;
     --shadow-light: rgba(10, 10, 10, 0.144) 0px 8px 24px;
-    --shadow-light-dark: rgba(0, 0, 0, 0.24) 0px 3px 20px;
+    --shadow-light-dark: rgba(0, 0, 0, 0.158) 3px 3px 20px;
     --transition: 0.5s;
     --radius-max: 15px;
     --radius-min: 10px;
 }
 
 /* Common Tag Styles */
+html,
+body {
+    overflow-x: hidden;
+    width: 100%;
+}
+
 body {
     font-family: 'Nunito', sans-serif;
     font-size: 16px;
